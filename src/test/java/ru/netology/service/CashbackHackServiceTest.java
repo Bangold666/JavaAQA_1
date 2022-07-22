@@ -14,7 +14,7 @@ import static org.testng.Assert.assertEquals;
         int amount = 1000;
         int actual = service.remain(amount);
 
-        assertEquals(expected,actual);
+        assertEquals(actual,expected);
     }
 
     @Test
