@@ -7,7 +7,7 @@ import static org.testng.Assert.assertEquals;
  public class CashbackHackServiceTest {
 
     @Test
-    void ShouldReturnZero() {
+    public void ShouldReturnZero() {
 
         CashbackHackService service = new CashbackHackService();
         int expected = 0;
