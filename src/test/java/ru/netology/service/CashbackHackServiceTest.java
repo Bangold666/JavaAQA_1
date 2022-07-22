@@ -7,10 +7,10 @@ import static org.testng.Assert.assertEquals;
  public class CashbackHackServiceTest {
 
     @Test
-    void ShouldViewIssueTest() {
+    void ShouldReturnZero() {
 
         CashbackHackService service = new CashbackHackService();
-        int expected = 100;
+        int expected = 0;
         int amount = 1000;
         int actual = service.remain(amount);
 
@@ -18,7 +18,7 @@ import static org.testng.Assert.assertEquals;
     }
 
     @Test
-    public void ShouldBeOkay() {
+    public void ShouldReturnHundred() {
         CashbackHackService service = new CashbackHackService();
         int expected = 100;
         int amount = 900;
@@ -26,17 +26,6 @@ import static org.testng.Assert.assertEquals;
 
         assertEquals(expected,actual);
     }
-
-     @Test
-     public void JustForInterest() {
-         CashbackHackService service = new CashbackHackService();
-         int expected = 500;
-         int amount = 1500;
-         int actual = service.remain(amount);
-
-         assertEquals(expected,actual);
-     }
-
 
 }
 
